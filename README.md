@@ -12,9 +12,10 @@
         open a terminal in vscode -> conda create -p venv python==3.8 -y -> {repo}/venv folder created in the repo
         -> conda activate venv
         
-        git init -> a hiddern git folder created in the repo
-        create README.md in {repo}/
-        git commit -m 'first commit'
+        echo "# airbnb_ds" >> README.md
+        git init
+        git add README.md
+        git commit -m "first commit"
         git branch -M main
         git remote add origin https://...
         git remote -v
@@ -25,12 +26,13 @@
     
     
     b. setup.py (will build my application as a package)
+        create {repo}/setup.py
         from setuptools import find_packages,setup
         
         create {repo}/src folder -> create a __init__.py file inside src folder, then src can be imported as a module. The main dev work will be inside src; -> when build is done, a {repo}.egg-info is created. 
         
-        requirements.txt -> append '-e .' as the last line, this will trigger setup.py
-        pip install requirements.txt
+        create {repo}/requirements.txt -> append '-e .' as the last line, this will trigger setup.py and build
+        pip install -r requirements.txt
 
 ## day2 project structure, logging and exception handling
     create {repo}/src/components folder -> create a __init__.py file inside this folder
