@@ -59,7 +59,7 @@
 ## day6 model trainer
 
 ## day7 model hypertuning
-   TODO
+   
 ## day8 model pusher
    AWS beanstalk, codepipeline
 
